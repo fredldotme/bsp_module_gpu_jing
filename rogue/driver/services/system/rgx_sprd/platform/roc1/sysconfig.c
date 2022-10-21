@@ -41,6 +41,8 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */ /**************************************************************************/
 
+#define SUPPORT_PVRSRV_GPUVIRT 1
+
 #include "interrupt_support.h"
 #include "pvrsrv_device.h"
 #include "syscommon.h"
