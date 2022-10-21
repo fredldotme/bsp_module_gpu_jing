@@ -1,6 +1,7 @@
 
 # pvrsrvkm.o
 CURRENT_PATH := $(shell cd $(BSP_ROOT_DIR)/modules/gpu/rogue/driver/build/linux/roc1_android; pwd)#$(MAKEFILE_PATH)/rogue/driver/build/linux/roc1_android
+#CURRENT_PATH := $(shell pwd)
 
 #include $(CLEAR_UNISOC_KO)
 KO_MODULE_PATH      := $(shell cd $(CURRENT_PATH); pwd)

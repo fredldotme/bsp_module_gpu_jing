@@ -87,6 +87,6 @@ include ../common/android/$(BOARD_NAME)/features.mk
 
 PDUMP_STREAMBUF_SIZE_MB := 10
 include ../config/core.mk
-include ../common/android/extra_config.mk
+#include ../common/android/extra_config.mk
 
 

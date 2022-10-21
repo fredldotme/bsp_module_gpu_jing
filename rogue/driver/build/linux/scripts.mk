@@ -286,15 +286,15 @@ install_script_fw: $(RELATIVE_OUT)/target_neutral/install_fw.sh
 endif
 
 # Build the top-level install script that drives the install.
-ifneq ($(SUPPORT_ANDROID_PLATFORM),)
-ifneq ($(SUPPORT_ARC_PLATFORM),)
-install_sh_template := $(MAKE_TOP)/scripts/install.sh.tpl
-else
-install_sh_template := $(MAKE_TOP)/common/android/install.sh.tpl
-endif
-else
-install_sh_template := $(MAKE_TOP)/scripts/install.sh.tpl
-endif
+#ifneq ($(SUPPORT_ANDROID_PLATFORM),)
+#ifneq ($(SUPPORT_ARC_PLATFORM),)
+#install_sh_template := $(MAKE_TOP)/scripts/install.sh.tpl
+#else
+#install_sh_template := $(MAKE_TOP)/common/android/install.sh.tpl
+#endif
+#else
+#install_sh_template := $(MAKE_TOP)/scripts/install.sh.tpl
+#endif
 
 $(RELATIVE_OUT)/install.sh: $(PVRVERSION_H) | $(RELATIVE_OUT)
 # In customer packages only one of config.mk or config_kernel.mk will exist.
